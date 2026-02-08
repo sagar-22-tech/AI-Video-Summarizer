@@ -33,68 +33,38 @@ An AI-powered web application that takes a video file as input, extracts audio, 
 
 ## ⚙️ How to Run Locally
 
-###
-1️⃣ Clone the repository
+###1️⃣ Clone the repository
 git clone https://github.com/real-sagar/AI-Video-Summarizer.git
 cd AI-Video-Summarizer
 cd backend
 npm install
 
-2️⃣ Backend Setup
+###2️⃣ Backend Setup
 cd backend
 npm install
-
-
 Create a .env file:
-
-PORT=5000
+PORT=your_port
 AI_API_KEY=your_api_key_here
-
-
 Run backend:
-
 npm run dev
 
-
-Backend runs on:
-
-http://localhost:5000
-
-3️⃣ Frontend Setup (Vite + React + Tailwind)
+###3️⃣ Frontend Setup (Vite + React + Tailwind)
 cd frontend
 npm install
 npm run dev
 
 
-Frontend runs on:
 
-http://localhost:5173
-
-🎨 Styling with Tailwind CSS
-
-Utility-first CSS framework
-
-No custom CSS files required
-
-Fully responsive UI
-
-Faster UI development and consistency
-
-🔁 Application Flow
+#🔁 Application Flow
 
 User uploads a video from React UI
-
 Video sent to backend via API
-
 Backend extracts audio using FFmpeg
-
 Audio converted to text using Speech-to-Text
-
 Text summarized using AI
-
 Summary returned and displayed in frontend
 
-👨‍💻 Author
+#👨‍💻 Author
 
-Sagar Saini
-B.Tech CSE (3rd Year)
+##Sagar Saini
+##B.Tech CSE (3rd Year)
