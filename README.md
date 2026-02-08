@@ -28,36 +28,7 @@ An AI-powered web application that takes a video file as input, extracts audio, 
 - Multer (file uploads)
 - FFmpeg (audio extraction)
 - AI APIs (Whisper / LLMs)
-
----
-
-## 📂 Project Structure
-AI-Video-Summarizer/
-│
-├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── App.jsx
-│ │ ├── main.jsx
-│ │ └── index.css # Tailwind directives
-│ ├── index.html
-│ ├── tailwind.config.js
-│ ├── postcss.config.js
-│ ├── vite.config.js
-│ └── package.json
-│
-├── backend/
-│ ├── src/
-│ ├── controllers/
-│ ├── routes/
-│ ├── utils/
-│ ├── server.js
-│ └── package.json
-│
-├── .gitignore
-└── README.md
-
-
+  
 ---
 
 ## ⚙️ How to Run Locally
