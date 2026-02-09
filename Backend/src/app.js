@@ -18,11 +18,5 @@ app.use(express.json());
 import videoRouter from "./routes/video.route.js"
 
 app.use("/api/videos", videoRouter);
-app.get("/health", (req, res) => {
-  res.json({ status: "ok" });
-});
-
-
-
 
 export {app}
