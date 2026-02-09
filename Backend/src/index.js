@@ -10,9 +10,7 @@ import path from "path";
 app.listen(process.env.PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${process.env.PORT}`);
 });
-app.get("/", (req, res) => {
-  res.send("Backend is alive 🚀");
-});
+
 
 const uploadDir = path.join(process.cwd(), "uploads/videos");
 
