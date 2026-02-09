@@ -1,13 +1,19 @@
-import express from "express";
+import dotenv from "dotenv"
+dotenv.config({
+    path: './env'
+})
 
-const app = express();
+import { app } from "./app.js"
 
+import fs from "fs";
+import path from "path";
+app.listen(process.env.PORT, "0.0.0.0", () => {
+  console.log(`Server running on port ${process.env.PORT}`);
+});
 app.get("/", (req, res) => {
-  res.send("Railway backend OK 🚀");
+  res.send("Backend is alive 🚀");
 });
 
-const PORT = process.env.PORT || 8000;
+const uploadDir = path.join(process.cwd(), "uploads/videos");
 
-app.listen(PORT, "0.0.0.0", () => {
-  console.log("Server running on port", PORT);
-});
+fs.mkdirSync(uploadDir, { recursive: true });
