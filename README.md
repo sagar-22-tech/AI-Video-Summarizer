@@ -107,17 +107,19 @@ npm start
 cd Frontend
 npm install
 npm run dev
-🐳 Docker (Backend)
-The backend is containerized with FFmpeg installed at the OS level for reliable media processing in production.
+## 🐳 Docker (Backend)
 
+The backend is containerized using Docker with FFmpeg installed at the OS level for reliable media processing in production.
+
+```bash
 docker build -t ai-video-summarizer-backend .
 docker run -p 10000:10000 ai-video-summarizer-backend
 ⚠️ Deployment Notes
-Render free tier has limited RAM; video size is restricted
+Render free tier has limited RAM, so video size is restricted
 
-Uploaded files are stored temporarily and cleaned up after processing
+Uploaded files are stored temporarily and removed after processing
 
-FFmpeg is accessed via system PATH (no OS-specific hardcoded paths)
+FFmpeg is accessed via the system PATH (no OS-specific hardcoded paths)
 
 📌 Key Learnings
 Handling FFmpeg in cloud environments
@@ -128,7 +130,7 @@ Docker-based backend deployment
 
 Secure environment variable management
 
-Frontend–backend integration using Vite env variables
+Frontend–backend integration using Vite environment variables
 
 👨‍💻 Author
 Sagar Saini
@@ -136,4 +138,4 @@ B.Tech CSE Student
 Interested in backend development, AI integration, and building production-ready systems.
 
 ⭐ Support
-If you like this project, consider giving it a ⭐ on GitHub!
+If you found this project useful, consider giving it a ⭐ on GitHub!
